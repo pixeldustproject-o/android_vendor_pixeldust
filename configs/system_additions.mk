@@ -12,6 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/pixeldust/prebuilt/bin/sysinit:system/bin/sysinit
+
+# Pixeldust-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/pixeldust/prebuilt/etc/init.pixeldust.rc:root/init.pixeldust.rc
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
