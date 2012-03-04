@@ -12,12 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/pixeldust/configs/aosp_fixes.mk
-include vendor/pixeldust/configs/pixeldust_main.mk
-include vendor/pixeldust/configs/system_additions.mk
-
-# Telephony packages
-PRODUCT_PACKAGES += \
-    Stk \
-    CellBroadcastReceiver
-
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/pixeldust/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/pixeldust/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/pixeldust/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
