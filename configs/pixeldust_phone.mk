@@ -34,3 +34,7 @@ $(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
 ifneq ($(filter marlin sailfish,$(TARGET_PRODUCT)),)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 endif
+
+# Thank you, please drive thru!
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dun.override=0
