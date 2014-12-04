@@ -47,3 +47,5 @@ EXCLUDE_SYSTEMUI_TESTS := true
 PRODUCT_PACKAGES += \
     PixelOverlay
 
+# Squisher Location
+SQUISHER_SCRIPT := vendor/pixeldust/tools/squisher
