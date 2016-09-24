@@ -46,3 +46,6 @@ PRODUCT_PACKAGES += \
 
 # Squisher Location
 SQUISHER_SCRIPT := vendor/pixeldust/tools/squisher
+
+# include definitions for SDCLANG
+include device/qcom/common/sdclang/sdclang.mk
