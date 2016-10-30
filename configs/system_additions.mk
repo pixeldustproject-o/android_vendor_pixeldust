@@ -36,3 +36,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \
     persist.service.adb.enable=1
 
+# Snap Camera
+PRODUCT_PACKAGES += \
+    SnapdragonCamera
+
+# Unbreak videorecording with Snap Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.camera.cpp.duplication=false
