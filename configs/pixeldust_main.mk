@@ -29,4 +29,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Busybox \
     Masquerade \
-    OmniStyle
+    OmniStyle \
+    QuickSearchBox
