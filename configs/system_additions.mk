@@ -46,3 +46,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Speed up compiling time
 EXCLUDE_SYSTEMUI_TESTS := true
+
+# Enable Storage manager
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.storage_manager.enabled=1
