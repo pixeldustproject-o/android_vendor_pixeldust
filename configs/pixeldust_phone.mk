@@ -29,3 +29,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Pull in Prebuilt applications for phones
 $(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
+
+# Inherit Pixel Gapps (temporarily) for pixels
+ifneq ($(filter marlin sailfish,$(TARGET_PRODUCT)),)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+endif
