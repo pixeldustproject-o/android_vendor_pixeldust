@@ -22,7 +22,7 @@ ifeq (linux,$(HOST_OS))
     AND_TC_PATH := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-$(TARGET_GCC_VERSION)
     AND_TC_VERSION := $(shell $(AND_TC_PATH)/bin/arm-linux-androideabi-gcc --version 2>&1)
     AND_TC_VERSION_NUMBER := $(shell $(AND_TC_PATH)/bin/arm-linux-androideabi-gcc -dumpversion 2>&1)
-    AND_TC_DATE := $(filter 20150% 20151% 20160% 20161% 20170% 20171%,$(AND_TC_VERSION))
+    AND_TC_DATE := $(filter 20160% 20161% 20170% 20171%,$(AND_TC_VERSION))
 
     ifneq ($(filter (UBERTC%),$(AND_TC_VERSION)),)
       AND_TC_NAME := UBERTC
@@ -48,7 +48,7 @@ ifeq (linux,$(HOST_OS))
 
     KERNEL_TC_VERSION := $(shell $(KERNEL_TC_PATH)/bin/arm-eabi-gcc --version 2>&1)
     KERNEL_TC_VERSION_NUMBER := $(shell $(KERNEL_TC_PATH)/bin/arm-eabi-gcc -dumpversion 2>&1)
-    KERNEL_TC_DATE := $(filter 20150% 20151% 20160% 20161% 20170% 20171%,$(KERNEL_TC_VERSION))
+    KERNEL_TC_DATE := $(filter 20160% 20161% 20170% 20171%,$(KERNEL_TC_VERSION))
 
     ifneq ($(filter (UBERTC%),$(KERNEL_TC_VERSION)),)
       KERNEL_TC_NAME := UBERTC
@@ -76,7 +76,7 @@ ifeq (linux,$(HOST_OS))
 
     UBER_TC_VERSION := $(shell $(UBER_TC_PATH)/bin/aarch64-linux-android-gcc --version)
     UBER_TC_VERSION_NUMBER := $(shell $(UBER_TC_PATH)/bin/aarch64-linux-android-gcc -dumpversion 2>&1)
-    UBER_TC_DATE := $(filter 20150% 20151% 20160% 20161%,$(UBER_TC_VERSION))
+    UBER_TC_DATE := $(filter 20160% 20161% 20170% 20171%,$(UBER_TC_VERSION))
     ifneq ($(filter (UBERTC%),$(UBER_TC_VERSION)),)
       UBER_TC_NAME := UBERTC
     else
