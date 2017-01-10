@@ -776,7 +776,7 @@
       mvno_type="gid"
   />
 
-  <apn carrier="Px MMS"
+  <apn carrier="Proximus MMS"
       mcc="206"
       mnc="01"
       apn="event.proximus.be"
@@ -789,21 +789,21 @@
       type="mms"
   />
 
-  <apn carrier="Px Internet"
+  <apn carrier="Proximus Internet"
       mcc="206"
       mnc="01"
       apn=""
       type="ia"
   />
 
-  <apn carrier="Px Internet"
+  <apn carrier="Proximus Internet"
       mcc="206"
       mnc="01"
-      apn="INTERNET.PROXIMUS.BE"
+      apn="internet.proximus.be"
       type="default,supl"
   />
 
-  <apn carrier="Px MMS"
+  <apn carrier="Proximus MMS"
       mcc="206"
       mnc="01"
       apn="event.proximus.be"
@@ -841,7 +841,7 @@
       mnc="01"
       apn="telenetwap.be"
       type="default,supl"
-      mvno_match_data="2060188"
+      mvno_match_data="20601889"
       mvno_type="imsi"
   />
 
@@ -853,7 +853,7 @@
       mmsproxy="195.130.149.100"
       mmsport="80"
       type="mms"
-      mvno_match_data="2060188"
+      mvno_match_data="20601889"
       mvno_type="imsi"
   />
 
@@ -1077,7 +1077,6 @@
       apn="orange"
       user="orange"
       password="orange"
-      authtype="1"
       type="default,supl"
   />
 
@@ -1090,11 +1089,10 @@
       mmsc="http://mms.orange.fr"
       mmsproxy="192.168.10.200"
       mmsport="8080"
-      authtype="1"
       type="mms"
   />
 
-  <apn carrier="Orange Entreprise"
+  <apn carrier="Orange Entreprises"
       mcc="208"
       mnc="01"
       apn="orange-mib"
@@ -1102,15 +1100,14 @@
       port="8000"
       user="orange"
       password="orange"
-      authtype="2"
-      type="default"
+      type="default,supl"
   />
 
   <apn carrier="Orange Internet"
       mcc="208"
       mnc="01"
       apn="orange.fr"
-      authtype="0"
+      authtype="1"
       user="orange"
       password="orange"
       type="dun"
@@ -1232,7 +1229,7 @@
       mmsc="http://mms1"
       mmsproxy="10.151.0.1"
       mmsport="8080"
-      type="default,mms,supl"
+      type="default,hipri,mms"
   />
 
   <apn carrier="SFR option Modem"
