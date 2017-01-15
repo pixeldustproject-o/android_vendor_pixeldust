@@ -24,4 +24,5 @@ PRODUCT_PACKAGES += \
 # Custom Packages
 PRODUCT_PACKAGES += \
     Busybox \
-    Masquerade
+    Masquerade \
+    OmniStyle
