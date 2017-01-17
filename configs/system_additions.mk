@@ -13,11 +13,18 @@
 # limitations under the License.
 
 # Backup Tool
+ifeq ($(AB_OTA_UPDATER),true)
+PRODUCT_COPY_FILES += \
+    vendor/pixeldust/prebuilt/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    vendor/pixeldust/prebuilt/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    vendor/pixeldust/prebuilt/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+else
 PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/pixeldust/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/pixeldust/prebuilt/bin/50-hosts.sh:system/addon.d/50-hosts.sh \
     vendor/pixeldust/prebuilt/bin/blacklist:system/addon.d/blacklist
+endif
 
 # init.d script support
 PRODUCT_COPY_FILES += \
