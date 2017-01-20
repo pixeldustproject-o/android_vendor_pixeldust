@@ -12,13 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/pixeldust/configs/aosp_fixes.mk
-include vendor/pixeldust/configs/bootanimation.mk
-include vendor/pixeldust/configs/pixeldust_main.mk
-include vendor/pixeldust/configs/system_additions.mk
-
-# Telephony packages
-PRODUCT_PACKAGES += \
-    Stk \
-    CellBroadcastReceiver
-
+# Add Stock Nougat bootanimation based on device
+ifneq ($(filter marlin sailfish,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/pure/prebuilt/bootanimation/pixel.zip:system/media/bootanimation.zip
+endif
