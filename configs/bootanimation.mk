@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Add Stock Nougat bootanimation based on device
-ifneq ($(filter marlin sailfish,$(TARGET_PRODUCT)),)
+# Add Pixel Dust ROM bootanimation based on device
+ifneq ($(filter pixeldust_angler pixeldust_marlin pixeldust_sailfish,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/pure/prebuilt/bootanimation/pixel.zip:system/media/bootanimation.zip
+        vendor/pixeldust/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
 endif
