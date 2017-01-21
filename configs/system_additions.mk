@@ -43,3 +43,6 @@ PRODUCT_PACKAGES += \
 # Unbreak videorecording with Snap Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.camera.cpp.duplication=false
+
+# Speed up compiling time
+EXCLUDE_SYSTEMUI_TESTS := true
