@@ -12,18 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/pixeldust/configs/aosp_fixes.mk
-include vendor/pixeldust/configs/bootanimation.mk
-include vendor/pixeldust/configs/pixeldust_main.mk
-include vendor/pixeldust/configs/system_additions.mk
-include vendor/pixeldust/configs/version.mk
+#Pixel Dust ROM versioning
+BUILD_VERSION := PixelDust-$(PLATFORM_VERSION)-$(shell date +%Y%m%d)
 
-# Telephony packages
-PRODUCT_PACKAGES += \
-    Stk \
-    CellBroadcastReceiver
+PRODUCT_BUILD_PROP_OVERRIDES := BUILD_DISPLAY_ID=$(BUILD_VERSION)
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_BUILD_TYPE=user
 
-# Allow tethering without provisioning app
 PRODUCT_PROPERTY_OVERRIDES += \
-    net.tethering.noprovisioning=true
+    ro.pixeldust.version=$(BUILD_VERSION)
 
