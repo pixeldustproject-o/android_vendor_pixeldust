@@ -31,8 +31,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
 
 # Inherit Pixel Gapps (temporarily) for pixels
-ifneq ($(filter marlin sailfish,$(TARGET_PRODUCT)),)
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+ifneq ($(filter pixeldust_marlin pixeldust_sailfish,$(TARGET_PRODUCT)),)
+    $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 endif
 
 # Thank you, please drive thru!
