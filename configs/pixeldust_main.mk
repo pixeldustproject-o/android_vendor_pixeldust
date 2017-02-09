@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Jack server heap size
+export ANDROID_JACK_VM_ARGS += "-Xmx4096m"
+
 # Include overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/pixeldust/overlay/common
