@@ -18,4 +18,6 @@ PRODUCT_PACKAGES += \
 
 # Build Snapdragon apps
 PRODUCT_PACKAGES += \
-    SnapdragonMusic
+    SnapdragonMusic \
+    SnapBrowser
+
