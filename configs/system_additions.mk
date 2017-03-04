@@ -47,10 +47,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Speed up compiling time
 EXCLUDE_SYSTEMUI_TESTS := true
 
-# Enable Storage manager
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.storage_manager.enabled=1
-
 # Tell Substratum that this ROM has full support
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.substratum.verified=true
