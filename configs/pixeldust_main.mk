@@ -31,3 +31,7 @@ PRODUCT_PACKAGES += \
     ThemeInterfacer \
     OmniStyle \
     QuickSearchBox
+
+# Inline gapps
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+
