@@ -28,6 +28,6 @@ PRODUCT_PACKAGES += \
 # Custom Packages
 PRODUCT_PACKAGES += \
     Busybox \
-    Masquerade \
+    ThemeInterfacer \
     OmniStyle \
     QuickSearchBox
