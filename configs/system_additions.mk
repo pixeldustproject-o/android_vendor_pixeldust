@@ -49,7 +49,8 @@ EXCLUDE_SYSTEMUI_TESTS := true
 
 # Tell Substratum that this ROM has full support
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.substratum.verified=true
+    ro.substratum.verified=true \
+    ro.masquerade.buildtype.check=true
 
 # Include Substratum unless SUBSTRATUM is set to false
 ifneq ($(SUBSTRATUM),false)
