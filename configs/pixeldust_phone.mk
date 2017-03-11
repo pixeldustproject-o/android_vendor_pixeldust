@@ -27,14 +27,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
 
-# Pull in Prebuilt applications for phones
-$(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
-
-# Inherit Pixel Gapps (temporarily) for pixels
-ifneq ($(filter pixeldust_marlin pixeldust_sailfish,$(TARGET_PRODUCT)),)
-    $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
-endif
-
 # Thank you, please drive thru!
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0
