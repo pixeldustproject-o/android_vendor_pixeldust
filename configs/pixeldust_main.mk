@@ -32,6 +32,6 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     QuickSearchBox
 
-# Inline gapps
-$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+# Inherit arm64 phone gapps gapps
+$(call inherit-product-if-exists, vendor/gapps/arm64-phone-gapps.mk)
 
