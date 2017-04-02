@@ -42,3 +42,7 @@ ifneq ($(SUBSTRATUM),false)
     PRODUCT_PACKAGES += \
         Substratum
 endif
+
+# OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws
