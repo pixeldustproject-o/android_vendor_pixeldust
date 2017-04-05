@@ -22,7 +22,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Main Required Packages
 PRODUCT_PACKAGES += \
     DeskClock \
-    LockClock \
+    webview \
     LiveWallpapersPicker
 
 # Custom Packages
@@ -31,7 +31,8 @@ PRODUCT_PACKAGES += \
     KernelAdiutor \
     ThemeInterfacer \
     OmniStyle \
-    QuickSearchBox
+    QuickSearchBox \
+    LockClock
 
 # Inherit arm64 phone gapps gapps
 $(call inherit-product-if-exists, vendor/gapps/arm64-phone-gapps.mk)
