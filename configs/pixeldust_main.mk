@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
     KernelAdiutor \
     ThemeInterfacer \
     OmniStyle \
-    QuickSearchBox \
     LockClock
 
 # Inherit arm64 phone gapps gapps
