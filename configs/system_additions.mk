@@ -49,10 +49,3 @@ ifneq ($(SUBSTRATUM),false)
         Substratum
 endif
 
-# OmniJaws
-PRODUCT_PACKAGES += \
-    OmniJaws
-
-# Include Android's 7.2.1 new Battery Usage Alerts
-PRODUCT_PACKAGES += \
-    Turbo
