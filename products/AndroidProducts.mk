@@ -22,3 +22,6 @@ endif
 ifeq (pixeldust_bullhead,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pixeldust_bullhead.mk
 endif
+ifeq (pixeldust_mako,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pixeldust_mako.mk
+endif

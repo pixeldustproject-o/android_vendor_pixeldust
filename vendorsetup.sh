@@ -30,4 +30,5 @@
 add_lunch_combo pixeldust_marlin-userdebug
 add_lunch_combo pixeldust_sailfish-userdebug
 add_lunch_combo pixeldust_bullhead-userdebug
+add_lunch_combo pixeldust_mako-userdebug
 
