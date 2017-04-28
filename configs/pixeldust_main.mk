@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
     ThemeInterfacer \
     OmniJaws \
     OmniStyle \
-    LockClock \
     PixelDustWallpapers \
     Turbo
 
