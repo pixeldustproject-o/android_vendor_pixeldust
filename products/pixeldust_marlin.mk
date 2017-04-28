@@ -23,13 +23,13 @@ include vendor/pixeldust/configs/system_optional.mk
 
 # Setup device specific product configuration.
 PRODUCT_NAME := pixeldust_marlin
-PRODUCT_BRAND := Google
+PRODUCT_BRAND := google
 PRODUCT_DEVICE := marlin
 PRODUCT_MODEL := Pixel XL
 PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=marlin \
-    BUILD_FINGERPRINT=google/marlin/marlin:7.1.2/N2G47E/3766409:user/release-keys \
-    PRIVATE_BUILD_DESC="marlin-user 7.1.2 N2G47E 3766409 release-keys"
+    BUILD_FINGERPRINT=google/marlin/marlin:7.1.2/NHG47K/3865390:user/release-keys \
+    PRIVATE_BUILD_DESC="marlin-user 7.1.2 NHG47K 3865390 release-keys"
 
