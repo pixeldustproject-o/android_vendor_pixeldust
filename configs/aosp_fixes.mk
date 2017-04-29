@@ -35,7 +35,7 @@ PRODUCT_COPY_FILES +=  \
 endif
 
 # Proprietary latinime libs needed for Keyboard swyping
-ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter pixeldust_mako,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 else
