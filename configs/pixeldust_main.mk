@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
     ThemeInterfacer \
     OmniJaws \
     OmniStyle \
+    OmniSwitch \
     PixelDustWallpapers \
     Turbo
 
