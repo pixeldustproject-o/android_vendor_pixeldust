@@ -15,7 +15,6 @@
 ifeq (pixeldust_marlin,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pixeldust_marlin.mk
 endif
-
 ifeq (pixeldust_sailfish,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pixeldust_sailfish.mk
 endif
@@ -24,4 +23,7 @@ ifeq (pixeldust_bullhead,$(TARGET_PRODUCT))
 endif
 ifeq (pixeldust_mako,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pixeldust_mako.mk
+endif
+ifeq (pixeldust_angler,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pixeldust_angler.mk
 endif
