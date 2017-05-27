@@ -35,6 +35,6 @@ PRODUCT_PACKAGES += \
     PixelDustWallpapers \
     Turbo
 
-# Inherit arm64 phone gapps gapps
-$(call inherit-product-if-exists, vendor/gapps/arm64-phone-gapps.mk)
+# Inherit pixel prebuilt apks
+$(call inherit-product-if-exists, vendor/pixel_prebuilts/pixel-prebuilts.mk)
 
