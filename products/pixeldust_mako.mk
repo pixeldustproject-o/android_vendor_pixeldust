@@ -27,6 +27,6 @@ PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=mako \
-    BUILD_FINGERPRINT="google/mako/mako:7.1.2/NJH47B/4021576:user/release-keys" \
-    PRIVATE_BUILD_DESC="mako-user 7.1.2 NJH47B 4021576 release-keys"
+    BUILD_FINGERPRINT="google/mako/mako:7.1.2/NJH47D/4045516:user/release-keys" \
+    PRIVATE_BUILD_DESC="mako-user 7.1.2 NJH47D 4045516 release-keys"
 
