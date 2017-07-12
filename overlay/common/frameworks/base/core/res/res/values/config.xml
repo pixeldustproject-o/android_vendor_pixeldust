@@ -45,6 +45,12 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
     </string-array>
 
+    <!-- Control the behavior when the user panic presses the back button.
+            0 - Nothing
+            1 - Go to home
+    -->
+    <integer name="config_backPanicBehavior">1</integer>
+
     <!-- Hide Project Fi app unless it is being used -->
     <string-array name="config_disabledUntilUsedPreinstalledCarrierApps">
         <item>com.google.android.apps.tycho</item>
