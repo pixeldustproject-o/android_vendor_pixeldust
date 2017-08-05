@@ -33,10 +33,10 @@ echo -e "
 tput sgr0
 tput setaf 1
 echo -e "";
-echo -e " Build is Succesfully Done! ";
+echo -e " Build completed successfully. ";
 echo -e "";
 
 tput setaf 1
-echo -e " 〉Enjoy the PixelDust ROM! // ";
+echo -e " 〉Enjoy the PixelDust Goodness! // ";
 tput sgr0
 echo -e "";
