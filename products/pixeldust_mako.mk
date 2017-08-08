@@ -18,6 +18,9 @@ $(call inherit-product, device/lge/mako/aosp_mako.mk)
 # Include common PixelDust stuff
 include vendor/pixeldust/configs/pixeldust_phone.mk
 
+# Include optional stuff (e.g. prebuilt apps)
+include vendor/pixeldust/configs/system_optional_legacy.mk
+
 # Setup device specific product configuration.
 PRODUCT_NAME := pixeldust_mako
 PRODUCT_BRAND := google
