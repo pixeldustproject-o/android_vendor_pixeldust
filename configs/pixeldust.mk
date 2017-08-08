@@ -52,6 +52,8 @@ ifeq (linux,$(HOST_OS))
 
     ifneq ($(filter (UBERTC%),$(KERNEL_TC_VERSION)),)
       KERNEL_TC_NAME := UBERTC
+    else ifneq ($(filter (crosstool-NG%),$(KERNEL_TC_VERSION)),)
+      KERNEL_TC_NAME := QUVNTNM
     else
       KERNEL_TC_NAME := GCC
     endif
