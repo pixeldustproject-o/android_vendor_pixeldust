@@ -79,6 +79,8 @@ ifeq (linux,$(HOST_OS))
     UBER_TC_DATE := $(filter 20160% 20161% 20170% 20171%,$(UBER_TC_VERSION))
     ifneq ($(filter (UBERTC%),$(UBER_TC_VERSION)),)
       UBER_TC_NAME := UBERTC
+    else ifneq ($(filter (crosstool-NG%),$(UBER_TC_VERSION)),)
+      UBER_TC_NAME := QUVNTNM
     else
       UBER_TC_NAME := GCC
     endif
