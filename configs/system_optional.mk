@@ -21,3 +21,6 @@ PRODUCT_PACKAGES += \
     SnapdragonMusic \
     SnapBrowser
 
+# Build PixelDust Walls
+PRODUCT_PACKAGES += \
+    PixelDustWallpapers

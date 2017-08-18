@@ -32,7 +32,6 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
     OmniSwitch \
-    PixelDustWallpapers \
     Turbo
 
 # Inherit pixel prebuilt apks
