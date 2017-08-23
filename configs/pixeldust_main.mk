@@ -27,7 +27,9 @@ PRODUCT_PACKAGES += \
 
 # Custom Packages
 PRODUCT_PACKAGES += \
-    Turbo
+    Turbo \
+    WallpaperPickerGooglePrebuilt \
+    NexusLauncherPrebuilt
 #    Busybox \
 #    ThemeInterfacer \
 #    OmniJaws \
