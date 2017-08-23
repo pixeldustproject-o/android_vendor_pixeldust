@@ -26,13 +26,13 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker
 
 # Custom Packages
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
+    Turbo
 #    Busybox \
 #    ThemeInterfacer \
 #    OmniJaws \
 #    OmniStyle \
 #    OmniSwitch \
-#    Turbo
 
 # Inherit pixel prebuilt apks
 #$(call inherit-product-if-exists, vendor/pixel_prebuilts/pixel-prebuilts.mk)
