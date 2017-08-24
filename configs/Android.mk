@@ -21,6 +21,3 @@
 # are responsible for having their own logic, for fine-grained control.
 
 LOCAL_PATH := $(call my-dir)
-
-# Include UBER common configuration
-include vendor/pixeldust/configs/pixeldust.mk
