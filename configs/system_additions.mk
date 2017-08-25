@@ -43,3 +43,7 @@ ifneq ($(SUBSTRATUM),false)
         Substratum
 endif
 
+# Overlay Packages
+PRODUCT_PACKAGES += \
+    PixelOverlay
+
