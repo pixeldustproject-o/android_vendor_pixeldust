@@ -13,10 +13,10 @@
 # limitations under the License.
 
 # Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/pixeldust/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/pixeldust/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/pixeldust/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh
+#PRODUCT_COPY_FILES += \
+#    vendor/pixeldust/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+#    vendor/pixeldust/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+#    vendor/pixeldust/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh
 
 # init.d script support
 PRODUCT_COPY_FILES += \
