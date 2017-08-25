@@ -1,4 +1,0 @@
-allow dumpstate app_data_file:fifo_file getattr;
-
-allow dumpstate dalvikcache_data_file:dir r_dir_perms;
-allow dumpstate dalvikcache_data_file:file r_file_perms;
