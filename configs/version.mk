@@ -13,11 +13,13 @@
 # limitations under the License.
 
 #Pixel Dust ROM versioning
-BUILD_VERSION := PixelDust-$(PLATFORM_VERSION)-$(shell date +%Y%m%d)
+BUILD_VERSION := PixelDustROM-$(PLATFORM_VERSION)-$(shell date +%Y%m%d)
 
 PRODUCT_BUILD_PROP_OVERRIDES := BUILD_DISPLAY_ID=$(BUILD_VERSION)
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_BUILD_TYPE=user
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pixeldust.version=$(BUILD_VERSION)
+
+PIXELDUST_VERSION := OREO-RC-00
 
