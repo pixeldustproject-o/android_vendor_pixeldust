@@ -34,14 +34,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 EXCLUDE_SYSTEMUI_TESTS := true
 
 # Tell Substratum that this ROM has full support
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.substratum.verified=true
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.substratum.verified=true
 
 # Include Substratum unless SUBSTRATUM is set to false
-ifneq ($(SUBSTRATUM),false)
-    PRODUCT_PACKAGES += \
-        Substratum
-endif
+#ifneq ($(SUBSTRATUM),false)
+#    PRODUCT_PACKAGES += \
+#        Substratum
+#endif
 
 # Overlay Packages
 PRODUCT_PACKAGES += \
