@@ -18,9 +18,13 @@ PRODUCT_PACKAGES += \
 
 # Build Snapdragon apps
 PRODUCT_PACKAGES += \
-    SnapdragonMusic \
     SnapBrowser
 
 # Build PixelDust Walls
 PRODUCT_PACKAGES += \
     PixelDustWallpapers
+
+# Vanilla Music
+PRODUCT_PACKAGES += \
+    VanillaMusic
+
