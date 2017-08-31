@@ -43,3 +43,7 @@ else
 PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
+
+# Fix Dialer
+PRODUCT_COPY_FILES +=  \
+    vendor/pixeldust/prebuilt/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
