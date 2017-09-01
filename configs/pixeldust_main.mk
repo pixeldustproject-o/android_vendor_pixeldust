@@ -29,6 +29,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librsjni
 
+# Themes
+PRODUCT_PACKAGES += \
+    PixelTheme \
+    Stock
+
 # Custom Packages
 PRODUCT_PACKAGES += \
     Turbo \
