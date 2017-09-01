@@ -79,6 +79,12 @@
     <!-- default dnd acess packages -->
     <string name="config_defaultDndAccessPackages">com.google.android.GoogleCamera</string>
 
+    <!-- Controls the WiFi wakeup feature.
+          0 = Not available.
+          1 = Available.
+     -->
+    <integer translatable="false" name="config_wifi_wakeup_available">1</integer>
+
     <!-- non blockable notification packages -->
     <string-array name="config_nonBlockableNotificationPackages">
         <item>com.android.dialer</item>
