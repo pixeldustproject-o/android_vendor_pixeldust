@@ -97,3 +97,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DuiBlackTheme \
     DuiDarkTheme
+
+# Default Theme
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
+
