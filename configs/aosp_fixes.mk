@@ -26,7 +26,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.rotation_locked=true \
     ro.carrier=unknown \
     ro.com.google.ime.theme_id=5 \
-    ro.opa.eligible_device=true
+    ro.opa.eligible_device=true \
+    persist.sys.disable_rescue=true
     #    ro.control_privapp_permissions=enforce \
 
 # Camera Effects for devices without a vendor partition
