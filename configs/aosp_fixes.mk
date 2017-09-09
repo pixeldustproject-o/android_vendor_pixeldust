@@ -31,8 +31,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera Effects for devices without a vendor partition
 ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES +=  \
-    vendor/pure/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
-    vendor/pure/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+    vendor/pixeldust/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/pixeldust/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 endif
 
 # Proprietary latinime libs needed for Keyboard swyping
