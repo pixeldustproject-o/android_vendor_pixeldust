@@ -35,8 +35,8 @@ PRODUCT_PACKAGES += \
     Turbo \
     WallpaperPickerGooglePrebuilt \
     NexusLauncherPrebuilt \
-    LatinIMEGooglePrebuilt
-#    Busybox \
+    LatinIMEGooglePrebuilt \
+    Busybox
 #    ThemeInterfacer \
 #    OmniJaws \
 #    OmniStyle \
