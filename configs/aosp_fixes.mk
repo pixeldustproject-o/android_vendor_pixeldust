@@ -39,9 +39,11 @@ endif
 ifneq ($(filter pixeldust_mako,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/pixeldust/prebuilt/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 else
 PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+    vendor/pixeldust/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so
 endif
 
 # Fix Dialer
