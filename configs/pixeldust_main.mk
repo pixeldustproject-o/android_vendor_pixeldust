@@ -27,7 +27,6 @@ PRODUCT_PACKAGES += \
 
 # Include explicitly to work around Facelock issues
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full \
     librsjni
 
 # Custom Packages
