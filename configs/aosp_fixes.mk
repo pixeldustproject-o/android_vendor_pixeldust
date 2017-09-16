@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # Google property overides
+ifeq ($(filter marlin sailfish,$(TARGET_PRODUCT)),)
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -23,7 +24,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.mode=OPTIONAL \
     ro.com.android.dataroaming=false \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
-    ro.setupwizard.rotation_locked=true \
+    ro.setupwizard.rotation_locked=true
+endif
+
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=unknown \
     ro.com.google.ime.theme_id=5 \
     ro.opa.eligible_device=true \
