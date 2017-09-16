@@ -49,3 +49,11 @@ endif
 # Fix Dialer
 PRODUCT_COPY_FILES +=  \
     vendor/pixeldust/prebuilt/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
+
+# Get some sounds
+$(call inherit-product-if-exists, frameworks/base/data/sounds/GoogleAudio.mk)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.notification_sound=Chime.ogg \
+    ro.config.alarm_alert=Flow.ogg \
+    ro.config.ringtone=Zen.ogg
