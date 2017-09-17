@@ -51,6 +51,15 @@
     -->
     <integer name="config_backPanicBehavior">1</integer>
 
+    <!-- Defines the default set of global actions. Actions may still be disabled or hidden based
+         on the current state of the device. -->
+    <string-array translatable="false" name="config_globalActionsList">
+        <item>power</item>
+        <item>restart</item>
+        <item>recovery</item>
+        <item>airplane</item>
+    </string-array>
+
     <!-- Hide Project Fi app unless it is being used -->
     <string-array name="config_disabledUntilUsedPreinstalledCarrierApps">
         <item>com.google.android.apps.tycho</item>
