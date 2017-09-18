@@ -35,9 +35,9 @@ PRODUCT_PACKAGES += \
     WallpaperPickerGooglePrebuilt \
     NexusLauncherPrebuilt \
     LatinIMEGooglePrebuilt \
-    Busybox
+    Busybox \
+    OmniJaws
 #    ThemeInterfacer \
-#    OmniJaws \
 #    OmniStyle \
 #    OmniSwitch \
 
