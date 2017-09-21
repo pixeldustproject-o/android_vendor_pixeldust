@@ -28,8 +28,9 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6P
 PRODUCT_MANUFACTURER := Huawei
 
+# Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT="google/angler/angler:7.1.2/N2G48C/4104010:user/release-keys" \
-    PRIVATE_BUILD_DESC="angler-user 7.1.2 N2G48C 4104010 release-keys"
+    BUILD_FINGERPRINT=google/angler/angler:8.0.0/OPR6.170623.019/4299446:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user 8.0.0 OPR6.170623.019 4299446 release-keys"
 
