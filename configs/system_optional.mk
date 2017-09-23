@@ -13,8 +13,8 @@
 # limitations under the License.
 
 # Include KernelAdiutor-Mod
-PRODUCT_PACKAGES += \
-    KernelAdiutor
+#PRODUCT_PACKAGES += \
+#    KernelAdiutor
 
 # Build Snapdragon apps
 PRODUCT_PACKAGES += \
