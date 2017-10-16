@@ -53,3 +53,7 @@ ifeq ($(HOST_OS),linux)
         include vendor/pixeldust/sdclang/sdclang.mk
     endif
 endif
+
+# Set custom volume steps
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.media_vol_steps=30
