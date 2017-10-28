@@ -522,7 +522,7 @@ function write_header() {
             printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-$YEAR The PixelDust Project\n" >> $1
         fi
     else
-        printf "# Copyright (C) $YEAR The LineageOS Project\n" > $1
+        printf "# Copyright (C) $YEAR The PixelDust Project\n" > $1
     fi
 
     cat << EOF >> $1
