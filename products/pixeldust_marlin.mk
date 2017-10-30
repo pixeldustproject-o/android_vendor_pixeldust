@@ -33,3 +33,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=google/marlin/marlin:8.0.0/OPR3.170623.008/4294783:user/release-keys \
     PRIVATE_BUILD_DESC="marlin-user 8.0.0 OPR3.170623.008 4294783 release-keys"
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.pixeldust.maintainer="spezi77"
