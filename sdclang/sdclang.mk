@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-SDCLANG ?= true
+SDCLANG ?= false
 SDCLANG_FORCED ?= false
 
 SDCLANG_PATH := vendor/qcom/sdclang-4.0/bin
