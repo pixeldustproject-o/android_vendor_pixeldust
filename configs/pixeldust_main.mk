@@ -43,3 +43,5 @@ PRODUCT_PACKAGES += \
     Busybox \
     OmniJaws
 
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD = false
+
