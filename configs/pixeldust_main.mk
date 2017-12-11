@@ -42,10 +42,4 @@ PRODUCT_PACKAGES += \
     LatinIMEGooglePrebuilt \
     Busybox \
     OmniJaws
-#    ThemeInterfacer \
-#    OmniStyle \
-#    OmniSwitch \
-
-# Inherit pixel prebuilt apks
-#$(call inherit-product-if-exists, vendor/pixel_prebuilts/pixel-prebuilts.mk)
 
