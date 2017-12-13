@@ -30,8 +30,8 @@ PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=marlin \
-    BUILD_FINGERPRINT=google/marlin/marlin:8.0.0/OPR3.170623.013/4397526:user/release-keys \
-    PRIVATE_BUILD_DESC="marlin-user 8.0.0 OPR3.170623.013 4397526 release-keys"
+    BUILD_FINGERPRINT=google/marlin/marlin:8.1.0/OPM1.171019.011/4448085:user/release-keys \
+    PRIVATE_BUILD_DESC="marlin-user 8.1.0 OPM1.171019.011 4448085 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pixeldust.maintainer="spezi77"
