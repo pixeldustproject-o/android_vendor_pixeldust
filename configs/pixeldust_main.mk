@@ -42,7 +42,8 @@ PRODUCT_PACKAGES += \
     LatinIMEGooglePrebuilt \
     Busybox \
     OmniJaws \
-    OmniStyle
+    OmniStyle \
+    SettingsDarkThemeOverlay
 
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD = false
 
