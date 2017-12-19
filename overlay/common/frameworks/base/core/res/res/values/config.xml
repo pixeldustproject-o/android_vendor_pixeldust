@@ -56,6 +56,14 @@
     <string-array translatable="false" name="config_globalActionsList">
         <item>power</item>
         <item>restart</item>
+        <item>screenshot</item>
+        <item>screenrecord</item>
+        <item>torch</item>
+        <item>airplane</item>
+        <item>settings</item>
+        <item>lockdown</item>
+        <item>users</item>
+        <item>silent</item>
     </string-array>
 
     <!-- Hide Project Fi app unless it is being used -->
