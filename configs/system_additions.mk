@@ -38,6 +38,9 @@ EXCLUDE_SYSTEMUI_TESTS := true
 ifneq ($(SUBSTRATUM),false)
     PRODUCT_PACKAGES += \
         Substratum
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.substratum.aopt=true
 endif
 
 # Overlay Packages
