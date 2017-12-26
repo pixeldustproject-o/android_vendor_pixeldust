@@ -41,7 +41,8 @@ PRODUCT_PACKAGES += \
     NexusLauncherPrebuilt \
     LatinIMEGooglePrebuilt \
     Busybox \
-    OmniJaws
+    OmniJaws \
+    OmniStyle
 
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD = false
 
