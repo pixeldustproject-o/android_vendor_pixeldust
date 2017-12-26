@@ -29,6 +29,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librsjni
 
+# Prebuilt APKs/JARs from 'vendor/overlay/Pixel'
+PRODUCT_PACKAGES += \
+    PixelThemeOverlay
+
 # Themes
 PRODUCT_PACKAGES += \
     PixelTheme \

@@ -18,14 +18,19 @@ TARGET_GCC_VERSION_KERNEL := 8.0
 # Prop Optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.performance.tuning=1 \
+    drm.service.enabled=true \
+    media.mediadrmservice.enable=true \
+    ro.boot.vendor.overlay.theme=com.google.android.theme.pixel \
     ro.facelock.black_timeout=400 \
     ro.facelock.det_timeout=1500 \
     ro.facelock.rec_timeout=2500 \
     ro.facelock.lively_timeout=2500 \
     ro.facelock.est_max_time=600 \
     ro.facelock.use_intro_anim=false \
+    ro.hardware.egl=adreno \
     ro.max.fling_velocity=12000 \
     ro.min.fling_velocity=8000 \
-    windowsmgr.max_events_per_sec=150 \
-    ro.storage_manager.enabled=true
+    ro.storage_manager.enabled=true \
+    ro.wallpapers_loc_request_suw=true \
+    windowsmgr.max_events_per_sec=150
 
