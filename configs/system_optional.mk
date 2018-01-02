@@ -16,10 +16,6 @@
 #PRODUCT_PACKAGES += \
 #    KernelAdiutor
 
-# Build Snapdragon apps
-PRODUCT_PACKAGES += \
-    SnapBrowser
-
 # Build PixelDust Walls
 PRODUCT_PACKAGES += \
     PixelDustWallpapers
