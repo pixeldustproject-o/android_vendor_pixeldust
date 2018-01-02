@@ -22,5 +22,5 @@ LOCAL_BUILT_MODULE_STEM := package.apk
 # Make sure the build system doesn't try to resign the APK
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
-LOCAL_SRC_FILES := $(LOCAL_MODULE)/$(LOCAL_MODULE).apk
+LOCAL_SRC_FILES := VanillaMusic.apk
 include $(BUILD_PREBUILT)
