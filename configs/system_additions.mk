@@ -31,8 +31,14 @@ PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/bin/sysinit:system/bin/sysinit
 
 # Pixeldust-specific init file
-PRODUCT_COPY_FILES += \
-    vendor/pixeldust/prebuilt/etc/init.pixeldust.rc:root/init.pixeldust.rc
+PRODUCT_PACKAGES += \
+    init.pixeldust.rc
+
+# SELinux Permissive Workaround for SafetyNet
+ifeq ($(TARGET_TRICK_SELINUX),true)
+PRODUCT_PACKAGES += \
+    init.sehide.rc
+endif
 
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \
