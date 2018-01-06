@@ -15,6 +15,13 @@
 # Toolchain and other
 TARGET_GCC_VERSION_KERNEL := 8.0
 
+# CLANG version
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.clang.version=Snapdragon-LLVM-4.0.2
+
+# Disable cfi sanitizer
+ENABLE_CFI := false
+
 # Prop Optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.performance.tuning=1 \
