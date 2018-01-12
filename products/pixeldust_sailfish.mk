@@ -21,11 +21,6 @@ include vendor/pixeldust/configs/pixeldust_phone.mk
 # Include optional stuff (e.g. prebuilt apps)
 include vendor/pixeldust/configs/system_optional.mk
 
-# Vendor blobs
--include vendor/google_devices/sailfish/BoardConfigVendor.mk
-# Build a separate vendor.img
-TARGET_COPY_OUT_VENDOR := vendor
-
 # Google Apps
 $(call inherit-product, vendor/googleapps/googleapps.mk)
 
