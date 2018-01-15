@@ -75,3 +75,7 @@ PRODUCT_BOOT_JARS += \
 # DU Utils Library
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
+
+# Extra packages
+PRODUCT_PACKAGES += \
+    libbfqio
