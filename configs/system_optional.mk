@@ -28,4 +28,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GoogleWebview
 
+# Include AmbientSense if it's available
+-include vendor/ambientmusic/AmbientMusic.mk
 
