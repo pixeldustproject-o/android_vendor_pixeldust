@@ -86,6 +86,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
+# Packages
+PRODUCT_PACKAGES += \
+    SystemDarkTheme
+
 # Extra packages
 PRODUCT_PACKAGES += \
     libbfqio
