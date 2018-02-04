@@ -92,3 +92,8 @@ PRODUCT_PACKAGES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     libbfqio
+
+# DUI themes
+PRODUCT_PACKAGES += \
+    DuiBlackTheme \
+    DuiDarkTheme
