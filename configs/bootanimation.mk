@@ -17,7 +17,7 @@ ifneq ($(filter pixeldust_angler pixeldust_marlin pixeldust_sailfish,$(TARGET_PR
     PRODUCT_COPY_FILES += \
         vendor/pixeldust/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter pixeldust_bullhead pixeldust_mako,$(TARGET_PRODUCT)),)
+ifneq ($(filter pixeldust_bullhead pixeldust_mako pixeldust_Z00L,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/pixeldust/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 endif
