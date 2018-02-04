@@ -21,6 +21,9 @@ include vendor/pixeldust/configs/pixeldust_phone.mk
 # Include optional stuff (e.g. prebuilt apps)
 include vendor/pixeldust/configs/system_optional.mk
 
+# Google Apps
+$(call inherit-product, vendor/googleapps/googleapps.mk)
+
 # Setup device specific product configuration.
 PRODUCT_NAME := pixeldust_Z00L
 PRODUCT_DEVICE := Z00L
