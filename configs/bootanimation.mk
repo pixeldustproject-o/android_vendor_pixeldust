@@ -21,4 +21,8 @@ ifneq ($(filter pixeldust_bullhead pixeldust_mako,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/pixeldust/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 endif
+ifneq ($(filter pixeldust_Z00L,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/pixeldust/prebuilt/bootanimation/720.zip:system/media/bootanimation.zip
+endif
 
