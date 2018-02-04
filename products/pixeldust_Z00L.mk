@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit AOSP device configuration for bullhead.
+# Inherit AOSP device configuration for Z00L.
 $(call inherit-product, device/asus/Z00L/full_Z00L.mk)
 
 # Include common PixelDust stuff
@@ -20,6 +20,9 @@ include vendor/pixeldust/configs/pixeldust_phone.mk
 
 # Include optional stuff (e.g. prebuilt apps)
 include vendor/pixeldust/configs/system_optional.mk
+
+# Include Pixel proprietary apps
+include vendor/proprietary_pixel/pixelapps.mk
 
 # Setup device specific product configuration.
 PRODUCT_NAME := pixeldust_Z00L
