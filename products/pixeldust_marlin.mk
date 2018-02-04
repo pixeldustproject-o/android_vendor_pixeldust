@@ -24,6 +24,9 @@ include vendor/pixeldust/configs/system_optional.mk
 # Google Apps
 $(call inherit-product, vendor/googleapps/googleapps.mk)
 
+# Enable SELinux Permissive Workaround for SafetyNet
+TARGET_TRICK_SELINUX := true
+
 # Setup device specific product configuration.
 PRODUCT_NAME := pixeldust_marlin
 PRODUCT_BRAND := google
