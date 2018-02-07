@@ -31,6 +31,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=unknown \
     ro.com.google.ime.theme_id=5 \
+    ro.wallpapers_loc_request_suw=true \
     ro.opa.eligible_device=true \
     persist.sys.disable_rescue=true
 
