@@ -52,9 +52,9 @@ PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so
 endif
 
-# Fix Dialer
+# Pixel Experience (unlimited photos, google dialer, etc.)
 PRODUCT_COPY_FILES +=  \
-    vendor/pixeldust/prebuilt/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
+    vendor/pixeldust/prebuilt/etc/sysconfig/pixel_experience.xml:system/etc/sysconfig/pixel_experience.xml 
 
 # Get some sounds
 $(call inherit-product-if-exists, frameworks/base/data/sounds/GoogleAudio.mk)
