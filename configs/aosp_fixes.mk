@@ -61,6 +61,7 @@ PRODUCT_COPY_FILES +=  \
 $(call inherit-product-if-exists, frameworks/base/data/sounds/GoogleAudio.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.notification_sound=Chime.ogg \
-    ro.config.alarm_alert=Flow.ogg \
-    ro.config.ringtone=Zen.ogg
+    ro.config.notification_sound=Coconuts.ogg \
+    ro.config.alarm_alert=Jump_start.ogg \
+    ro.config.ringtone=The_big_adventure.ogg
+
