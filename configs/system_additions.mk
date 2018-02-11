@@ -56,10 +56,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.substratum.aopt=true
 endif
 
-# Overlay Packages
-PRODUCT_PACKAGES += \
-    PixelOverlay
-
 # Squisher Location
 SQUISHER_SCRIPT := vendor/pixeldust/tools/squisher
 
@@ -92,3 +88,4 @@ PRODUCT_PACKAGES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     libbfqio
+
