@@ -15,13 +15,6 @@
 # Toolchain and other
 TARGET_GCC_VERSION_KERNEL := 8.0
 
-# CLANG version
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.clang.version=Snapdragon-LLVM-4.0.2
-
-# Disable cfi sanitizer
-ENABLE_CFI := false
-
 # Prop Optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.performance.tuning=1 \
@@ -36,3 +29,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     windowsmgr.max_events_per_sec=150 \
     ro.storage_manager.enabled=true
 
+# DragonTC info
+DRAGONTC_VERSION := 7.0
+
+DTC_PATH := prebuilts/clang/host/linux-x86/$(DRAGONTC_VERSION)
+DTC_VER := $(shell cat $(DTC_PATH)/VERSION)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.clang.version=$(DTC_VER)
+
+-include prebuilts/clang/host/linux-x86/$(DRAGONTC_VERSION)/DragonTC.mk
