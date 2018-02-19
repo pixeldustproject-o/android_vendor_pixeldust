@@ -8,4 +8,8 @@
 
     <color name="zen_introduction">#ff000000</color>
     <color name="zen_qs_panel_close_button_color">@android:color/black</color>
+
+    <!-- Screen pinning layout -->
+    <color name="screen_pinning_background_color">@*android:color/background_material_dark</color>
+    <color name="screen_pinning_button_text">@android:color/white</color>
 </resources>
