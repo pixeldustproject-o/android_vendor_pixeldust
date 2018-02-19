@@ -12,4 +12,5 @@
     <!-- Screen pinning layout -->
     <color name="screen_pinning_background_color">@*android:color/background_material_dark</color>
     <color name="screen_pinning_button_text">@android:color/white</color>
+    <color name="screen_pinning_primary_text">@android:color/white</color>
 </resources>
