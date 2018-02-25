@@ -10,5 +10,7 @@
     <color name="immersive_cling_button_text_color">@android:color/white</color>
 
     <color name="app_permission_icon_tint">@android:color/white</color>
+
+    <color name="notification_info_button_text">@*android:color/notification_default_color</color>
 </resources>
 
