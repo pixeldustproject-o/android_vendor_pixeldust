@@ -39,5 +39,3 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle
 
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD = false
-

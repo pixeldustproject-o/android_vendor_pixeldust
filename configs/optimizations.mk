@@ -29,6 +29,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     windowsmgr.max_events_per_sec=150 \
     ro.storage_manager.enabled=true
 
+# ART changes
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+
 # DragonTC info
 DRAGONTC_VERSION := 7.0
 
