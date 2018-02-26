@@ -27,6 +27,9 @@ $(call inherit-product, vendor/googleapps/googleapps.mk)
 # Enable SELinux Permissive Workaround for SafetyNet
 TARGET_TRICK_SELINUX := true
 
+# Disable abi checking
+export SKIP_ABI_CHECKS := true
+
 # Setup device specific product configuration.
 PRODUCT_NAME := pixeldust_sailfish
 PRODUCT_BRAND := google
