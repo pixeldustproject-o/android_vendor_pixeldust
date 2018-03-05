@@ -11,4 +11,8 @@
 
     <color name="app_permission_icon_tint">@android:color/white</color>
 
+    <!-- Toast text and bg colors -->
+    <color name="toast_bg_color">#cc000000</color>
+    <color name="toast_text_color">@android:color/white</color>
+
 </resources>
