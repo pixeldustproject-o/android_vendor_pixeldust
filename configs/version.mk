@@ -21,5 +21,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_BUILD_TYPE=user
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pixeldust.version=$(BUILD_VERSION)
 
-PIXELDUST_VERSION := oreo-stable-r3
+PIXELDUST_VERSION := oreo-outstanding-r4
 
