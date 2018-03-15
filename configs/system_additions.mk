@@ -86,6 +86,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
+# Fonts
+PRODUCT_PACKAGES += \
+    DU-Fonts
+
 # Packages
 PRODUCT_PACKAGES += \
     GBoardDarkTheme \

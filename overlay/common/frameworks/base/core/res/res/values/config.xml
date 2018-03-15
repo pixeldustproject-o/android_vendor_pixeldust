@@ -122,4 +122,10 @@
          handle wallpaper cropping.
     -->
     <string name="config_wallpaperCropperPackage" translatable="false">com.google.android.apps.wallpaper</string>
+
+    <!-- System font packages (overlay in vendor) -->
+    <string-array name="config_fontPackages" translatable="false">
+        <item>com.dirtyunicorns.fonts</item>
+    </string-array>
+
 </resources>
