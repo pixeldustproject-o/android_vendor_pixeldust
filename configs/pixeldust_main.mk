@@ -37,6 +37,5 @@ PRODUCT_PACKAGES += \
     LatinIMEGooglePrebuilt \
     Busybox \
     OmniJaws \
-    OmniStyle \
-    SettingsDarkThemeOverlay
+    OmniStyle
 
