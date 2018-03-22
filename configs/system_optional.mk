@@ -24,7 +24,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PixelDustWallpapers
 
-# Vanilla Music
-PRODUCT_PACKAGES += \
-    VanillaMusic
-
