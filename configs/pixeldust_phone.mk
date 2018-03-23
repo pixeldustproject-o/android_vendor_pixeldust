@@ -17,7 +17,6 @@ include vendor/pixeldust/configs/bootanimation.mk
 include vendor/pixeldust/configs/optimizations.mk
 include vendor/pixeldust/configs/pixeldust_main.mk
 include vendor/pixeldust/configs/system_additions.mk
-include vendor/pixeldust/configs/themes.mk
 include vendor/pixeldust/configs/version.mk
 
 # World APN list

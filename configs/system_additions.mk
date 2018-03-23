@@ -93,17 +93,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbfqio
 
-# DUI themes
-PRODUCT_PACKAGES += \
-    DuiBlackTheme \
-    DuiDarkTheme
-
-# Device themes
-PRODUCT_PACKAGES += \
-    SettingsDarkThemeOverlay \
-    SettingsBlackThemeOverlay \
-    SystemBlackThemeOverlay
-
 # Default Theme
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
