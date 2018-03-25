@@ -49,9 +49,6 @@ EXCLUDE_SYSTEMUI_TESTS := true
 
 # Include Substratum unless SUBSTRATUM is set to false
 ifneq ($(SUBSTRATUM),false)
-    PRODUCT_PACKAGES += \
-        Substratum
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.substratum.aopt=true
 endif
