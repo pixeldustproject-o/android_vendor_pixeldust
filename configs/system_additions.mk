@@ -125,3 +125,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
 
+# Google Markup from Android P
+PRODUCT_PACKAGES += \
+    GoogleMarkup
+
