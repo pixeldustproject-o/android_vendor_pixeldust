@@ -38,5 +38,6 @@
     <color name="accent_device_default_light">#ff556270</color>
     <color name="accent_device_default_dark">#ff556270</color>
     <color name="accent_device_default_50">#ff556270</color>
+    <color name="settings_icon_tint_color">#ff556270</color>
 
 </resources>
