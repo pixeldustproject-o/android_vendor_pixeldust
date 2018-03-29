@@ -21,9 +21,6 @@ include vendor/pixeldust/configs/pixeldust_phone.mk
 # Include optional stuff (e.g. prebuilt apps)
 include vendor/pixeldust/configs/system_optional.mk
 
-# Include Pixel proprietary apps
-include vendor/proprietary_pixel/pixelapps.mk
-
 # Setup device specific product configuration.
 PRODUCT_NAME := pixeldust_Z00L
 PRODUCT_DEVICE := Z00L
