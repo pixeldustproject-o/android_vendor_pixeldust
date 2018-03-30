@@ -93,7 +93,11 @@ PRODUCT_PACKAGES += \
     SettingsDarkTheme \
     SystemDarkTheme \
     SettingsBlackTheme \
-    SystemBlackTheme
+    SystemBlackTheme \
+    SettingsShishuTheme \
+    SystemShishuTheme \
+    SettingsShishuNightsTheme \
+    SystemShishuNightsTheme
 
 # Overlays
 PRODUCT_PACKAGES += \
