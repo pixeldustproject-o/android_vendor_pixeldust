@@ -30,7 +30,7 @@
     <color name="notification_shade_background_color">#212121</color>
     <color name="notification_guts_bg_color">#212121</color>
     <color name="notification_material_background_color">#212121</color>
-    <color name="notification_default_color">@*android:color/theme_text1</color> <!-- Gray 600 -->
+    <color name="notification_default_color">@*android:color/accent_device_default_light</color>
     <color name="notification_action_list">#212121</color>
     <color name="notification_action_list_dark">#212121</color>
     <color name="notification_primary_text_color_light">@*android:color/theme_text1</color>
