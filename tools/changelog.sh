@@ -19,14 +19,13 @@ touch $Changelog
 # Print something to build output
 echo ${bldppl}"Generating changelog..."${txtrst}
 
-for i in $(seq 7);
+for i in $(seq 31);
 do
 export After_Date=`date --date="$i days ago" +%F`
 k=$(expr $i - 1)
 export Until_Date=`date --date="$k days ago" +%F`
-echo "====================" >> $Changelog;
-echo "     $Until_Date    " >> $Changelog;
-echo "====================" >> $Changelog;
+echo "" >> $Changelog;
+echo " $Until_Date:"    >> $Changelog;
 repo forall -pc 'git log --after=$After_Date --until=$Until_Date --pretty=tformat:"%h  %s  [%an]" --abbrev-commit --abbrev=7' >> $Changelog
 echo "" >> $Changelog;
 done
