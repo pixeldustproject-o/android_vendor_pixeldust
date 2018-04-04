@@ -5,11 +5,18 @@
 
 export S=/system
 export C=/postinstall/tmp/backupdir
-export V=14.1
+export V=8.1.0
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 mkdir -p /postinstall/tmp/
 cp -f /postinstall/system/bin/backuptool_ab.functions /postinstall/tmp/backuptool.functions
+
+# Wipe system cache
+wipe_system_cache() {
+  if [ -d /data/system/package_cache/ ]; then
+    rm -fr /data/system/package_cache/*
+  fi
+}
 
 # Preserve /system/addon.d in /tmp/addon.d
 preserve_addon_d() {
@@ -35,7 +42,7 @@ check_prereq() {
 if [ ! -r /system/build.prop ]; then
     return 0
 fi
-if ( ! grep -q "^ro.pixeldust.version=$V.*" /system/build.prop ); then
+if ( ! grep -q "^ro.build.version.release=$V.*" /system/build.prop ); then
   echo "Not backing up files from incompatible version: $V"
   return 0
 fi
@@ -111,6 +118,7 @@ case "$1" in
     run_stage restore
     run_stage post-restore
     restore_addon_d
+    wipe_system_cache
     rm -rf $C
     rm -rf /postinstall/tmp
     sync
