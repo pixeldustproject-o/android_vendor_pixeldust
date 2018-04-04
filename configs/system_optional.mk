@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The Pixel Dust Project
+# Copyright (C) 2018 The Pixel Dust Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,14 +11,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-# Include KernelAdiutor-Mod
-#PRODUCT_PACKAGES += \
-#    KernelAdiutor
-
-# Build Snapdragon apps
-PRODUCT_PACKAGES += \
-    SnapBrowser
 
 # Build PixelDust Walls
 PRODUCT_PACKAGES += \
