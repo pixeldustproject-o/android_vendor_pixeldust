@@ -149,4 +149,4 @@ PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/fonts/roadrage/road_rage.ttf:system/fonts/RoadRage-Regular.ttf \
     vendor/pixeldust/prebuilt/fonts/snowstorm/snowstorm.ttf:system/fonts/Snowstorm-Regular.ttf \
     vendor/pixeldust/prebuilt/fonts/vcrosd/vcr_osd_mono.ttf:system/fonts/ThemeableFont-Regular.ttf \
-    vendor/pixeldust/prebuilt/fonts/googlesans/GoogleSans-Medium.ttf:system/fonts/GoogleSans-Medium.ttf
+    vendor/pixeldust/prebuilt/fonts/googlesans/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Medium.ttf
