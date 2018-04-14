@@ -1,1 +1,13 @@
-/system/bin/sysinit       u:object_r:sysinit_exec:s0
+# Sysinit
+/system/bin/sysinit                     u:object_r:sysinit_exec:s0
+
+# Userinit
+/system/etc/init\.d/90userinit          u:object_r:userinit_exec:s0
+
+# postinstall
+/system/bin/backuptool_ab.functions              u:object_r:otapreopt_chroot_exec:s0
+/system/bin/backuptool_ab.sh                     u:object_r:otapreopt_chroot_exec:s0
+/system/bin/backuptool_postinstall.sh            u:object_r:otapreopt_chroot_exec:s0
+
+# bash
+/system/bin/bash       -- u:object_r:shell_exec:s0
