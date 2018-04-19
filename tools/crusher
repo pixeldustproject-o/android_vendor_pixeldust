@@ -9,13 +9,12 @@
 # cyanogen - shade@chemlab.org
 # ChrisSoyars - me@ctso.me
 # Nougat fixes + Improvements: Joe Maples - frap129@gmail.com
+# Use tput to colorize: Matthias - spezi7713@gmx.net
 
 set -e
 QUIET=1
 BASE=`pwd`
 TMPDIR=/tmp/crusher-$$
-
-. $ANDROID_BUILD_TOP/vendor/pixeldust/tools/colors
 
 if [ "$APKCERTS" = "" ];
 then
@@ -28,14 +27,18 @@ then
     APKCERTS=$OUT/obj/PACKAGING/target_files_intermediates/$TARGET_PRODUCT-target_files-$TARGET_BUILD_VARIANT.$USER/META/apkcerts.txt
     if [ ! -f "$APKCERTS" ];
     then
-        echo $CL_RED"Set APKCERTS to the path to your apkcerts.txt file"$CL_RST
+        tput setaf 1
+        echo "Set APKCERTS to the path to your apkcerts.txt file"
+        tput sgr0
         exit 1;
     fi
 fi
 
 if [ ! -f "$APKCERTS" ];
 then
-    echo $CL_RED"Invalid path to apkcerts.txt, set APKCERTS to the correct path."$CL_RST
+    tput setaf 1
+    echo "Invalid path to apkcerts.txt, set APKCERTS to the correct path."
+    tput sgr0
 fi
 
 if [ "$(which pngquant)" != "" ];
@@ -61,27 +64,37 @@ else
             optipng -o7 $1 1> /dev/null 2> /dev/null;
         }
     else
-        echo $CL_RED"Please install pngquant or optipng (or both, for improved crushing)"$CL_RST
+        tput setaf 1
+        echo "Please install pngquant or optipng (or both, for improved crushing)"
+        tput sgr0
         exit 1;
     fi
 fi
 
 if [ "`which aapt`" = "" ];
 then
-    echo $CL_RED"Please ensure aapt is in your \$PATH"$CL_RST
+    tput setaf 1
+    echo "Please ensure aapt is in your \$PATH"
+    tput sgr0
     exit 1;
 fi
 
 if [ "`which zipalign`" = "" ];
 then
-    echo $CL_RED"Please ensure zipalign is in your \$PATH"$CL_RST
+    tput setaf 1
+    echo "Please ensure zipalign is in your \$PATH"
+    tput sgr0
     exit 1;
 fi
 
 if [ -e "$1" ];
 then
     NAME=`basename $1`;
-    echo $CL_CYN$OPTSTRING $CL_YLW"$NAME..."$CL_RST;
+    tput setaf 2
+    echo $OPTSTRING
+    tput setaf 4
+    echo "$NAME...";
+    tput sgr0
 
     if [ "$2" != "" ];
     then
@@ -89,7 +102,9 @@ then
         KEY=build/target/product/security/$2.pk8
         if [ ! -f "$ANDROID_BUILD_TOP/$CERT" ];
         then
-            echo $CL_RED"$CERT does not exist!";$CL_RST
+            tput setaf 1
+            echo "$CERT does not exist!";
+            tput sgr0
             exit 1;
         fi
     else
@@ -97,24 +112,31 @@ then
         [ $QUIET ] || echo "APKINFO: $APKINFO";
         if [ "$APKINFO" = "" ];
         then
-            echo $CL_RED"No apk info for $NAME";$CL_RST
+            tput setaf 1
+            echo "No apk info for $NAME";
+            tput sgr0
             exit 1;
         fi
         CERT=`echo $APKINFO | awk {'print $2'} | cut -f 2 -d "=" | tr -d "\""`;
         KEY=`echo $APKINFO | awk {'print $3'} | cut -f 2 -d "=" | tr -d "\""`;
         if [ "$CERT" = "" ];
         then
-            echo -e $CL_RED"Unable to find certificate for $NAME"$CL_RST
+            tput setaf 1
+            echo -e "Unable to find certificate for $NAME"
+            tput sgr0
             exit 1;
         fi
         if [ "$CERT" = "PRESIGNED" ];
         then
-            echo $CL_GRN"$NAME is presigned, skipping"$CL_RST
+            tput setaf 7
+            echo "$NAME is presigned, skipping"
+            tput sgr0
             exit 1;
         fi
     fi
-
-    [ $QUIET ] || echo $CL_YLW"Certificate:"$CL_RST" $CERT";
+    tput setaf 3
+    [ $QUIET ] || echo "Certificate: $CERT";
+    tput sgr0
 
     [ -d $TMPDIR/$NAME ] && rm -rf $TMPDIR/$NAME
     mkdir -p $TMPDIR/$NAME
@@ -123,19 +145,24 @@ then
     unzip -q $BASE/$1
     for x in `find . -name "*.png" | grep -v "\.9.png$" | tr "\n" " "`
     do
-        [ $QUIET ] || echo $CL_GRN"Crushing $x"$CL_RST
+        tput setaf 2 
+        [ $QUIET ] || echo "Crushing $x"
+        tput sgr0
         optimize_png $x
     done
     cp $BASE/$1 $BASE/$1.old
-
-    [ $QUIET ] || echo $CL_GRN"Repacking apk.."$CL_RST
+    tput setaf 2
+    [ $QUIET ] || echo "Repacking apk.."
+    tput sgr0
     aapt p -0 .dat -0 .dict -0 .arsc -F $NAME .
-
-    [ $QUIET ] || echo $CL_YLW"Resigning with cert: `echo $CERT`"$CL_RST
-
+    tput setaf 3
+    [ $QUIET ] || echo "Resigning with cert: `echo $CERT`"
+    tput sgr0
     [ $QUIET ] || echo java -Djava.library.path=$SIGNAPK_JNI_LIBRARY_PATH -jar $ANDROID_HOST_OUT/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
     java -Djava.library.path=$SIGNAPK_JNI_LIBRARY_PATH -jar $ANDROID_HOST_OUT/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME 
-    [ $QUIET ] || echo $CL_GRN"Zipalign.."$CL_RST
+    tput setaf 2
+    [ $QUIET ] || echo "Zipalign.."
+    tput sgr0
     zipalign -f 4 signed_$NAME $BASE/$1
     if [ ! $QUIET ]; then
         ls -l $BASE/$1.old
