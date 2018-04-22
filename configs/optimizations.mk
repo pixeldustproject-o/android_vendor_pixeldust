@@ -51,13 +51,29 @@ else
   PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
 endif
 
-# DragonTC info
-DRAGONTC_VERSION := 7.0
+# Conditionally use either DragonTC OR SDCLANG Optimizations
+ifneq ($(DISABLE_DTC_OPTS),true)
+  # DragonTC info
+  DRAGONTC_VERSION := 7.0
 
-DTC_PATH := prebuilts/clang/host/linux-x86/$(DRAGONTC_VERSION)
-DTC_VER := $(shell cat $(DTC_PATH)/VERSION)
+  DTC_PATH := prebuilts/clang/host/linux-x86/$(DRAGONTC_VERSION)
+  DTC_VER := $(shell cat $(DTC_PATH)/VERSION)
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.clang.version=$(DTC_VER)
+  PRODUCT_PROPERTY_OVERRIDES += \
+      ro.clang.version=$(DTC_VER)
 
--include prebuilts/clang/host/linux-x86/$(DRAGONTC_VERSION)/DragonTC.mk
+  -include prebuilts/clang/host/linux-x86/$(DRAGONTC_VERSION)/DragonTC.mk
+else
+  # Toolchain and other
+  TARGET_GCC_VERSION_KERNEL := 8.0
+
+  ifeq ($(TARGET_USE_SDCLANG),true)
+    # Disable cfi sanitizer
+    ENABLE_CFI := false
+
+    PRODUCT_PROPERTY_OVERRIDES += \
+        ro.clang.version=Snapdragon-LLVM-4.0.2
+  else
+    # This path is not recommended and has not been tested yet.
+  endif
+endif
