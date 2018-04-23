@@ -135,9 +135,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     GoogleMarkup
 
-# Include GoogleSans font
-include external/google-fonts/googlesans/fonts.mk
-
 # Additional System fonts
 PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/fonts/gobold/Gobold.ttf:system/fonts/Gobold.ttf \
