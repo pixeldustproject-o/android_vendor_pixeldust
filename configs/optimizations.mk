@@ -75,5 +75,8 @@ else
         ro.clang.version=Snapdragon-LLVM-4.0.2
   else
     # This path will only work in case of using a different manifest which excludes all changes required for compiling with DragonTC/clang7 and LTO. Here is the manifest https://github.com/pixeldustproject-o/manifest/tree/o2-dtc-removed
+
+    PRODUCT_PROPERTY_OVERRIDES += \
+        ro.clang.version=clang-4053586
   endif
 endif
