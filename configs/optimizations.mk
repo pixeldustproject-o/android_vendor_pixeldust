@@ -51,7 +51,7 @@ else
   PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
 endif
 
-# Conditionally use either DragonTC OR SDCLANG Optimizations
+# Conditionally use either DragonTC OR SDCLANG Optimizations (in order to disable the use of DragonTC the relevant flags used below need to be inserted into your device make file in vendor/pixeldust/products)
 ifneq ($(DISABLE_DTC_OPTS),true)
   # DragonTC info
   DRAGONTC_VERSION := 7.0
@@ -74,6 +74,6 @@ else
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.clang.version=Snapdragon-LLVM-4.0.2
   else
-    # This path is not recommended and has not been tested yet.
+    # This path will only work in case of using a different manifest which excludes all changes required for compiling with DragonTC/clang7 and LTO. Here is the manifest https://github.com/pixeldustproject-o/manifest/tree/o2-dtc-removed
   endif
 endif
