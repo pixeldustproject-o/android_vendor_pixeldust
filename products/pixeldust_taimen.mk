@@ -16,7 +16,11 @@
 TARGET_SCREEN_HEIGHT := 2880
 TARGET_SCREEN_WIDTH := 1440
 
-# Include Nitrogen common configuration
+# Do not use DragonTC for this device
+DISABLE_DTC_OPTS := true
+TARGET_USE_SDCLANG := true
+
+# Include common PixelDust stuff
 include vendor/pixeldust/configs/pixeldust_phone.mk
 
 # Include optional stuff (e.g. prebuilt apps)
@@ -31,11 +35,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Inherit AOSP device configuration for  taimen
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
-
-# Do not use DragonTC for this device
-DISABLE_DTC_OPTS := true
-TARGET_USE_SDCLANG := true
-
 
 # Override AOSP build properties
 PRODUCT_NAME := pixeldust_taimen
