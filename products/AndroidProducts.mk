@@ -30,4 +30,6 @@ endif
 ifeq (pixeldust_Z00L,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pixeldust_Z00L.mk
 endif
-
+ifeq (pixeldust_taimen,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pixeldust_taimen.mk
+endif

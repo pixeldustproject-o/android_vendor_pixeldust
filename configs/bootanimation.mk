@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Add Pixel Dust ROM bootanimation based on device
-ifneq ($(filter pixeldust_angler pixeldust_marlin pixeldust_sailfish,$(TARGET_PRODUCT)),)
+ifneq ($(filter pixeldust_angler pixeldust_marlin pixeldust_sailfish pixeldust_taimen,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/pixeldust/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
 endif
