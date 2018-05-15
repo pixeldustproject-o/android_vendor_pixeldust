@@ -15,6 +15,10 @@
 # Inherit AOSP device configuration for mako.
 $(call inherit-product, device/lge/mako/aosp_mako.mk)
 
+# Do not use DragonTC for this device
+DISABLE_DTC_OPTS := true
+TARGET_USE_SDCLANG := true
+
 # Include common PixelDust stuff
 include vendor/pixeldust/configs/pixeldust_phone.mk
 

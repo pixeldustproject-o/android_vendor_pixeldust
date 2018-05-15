@@ -15,6 +15,10 @@
 # Inherit AOSP device configuration for bullhead.
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
+# Do not use DragonTC for this device
+DISABLE_DTC_OPTS := true
+TARGET_USE_SDCLANG := true
+
 # Include common PixelDust stuff
 include vendor/pixeldust/configs/pixeldust_phone.mk
 

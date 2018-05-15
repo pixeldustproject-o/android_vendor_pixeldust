@@ -17,6 +17,7 @@ $(call inherit-product, device/asus/Z00L/full_Z00L.mk)
 
 # Do not use DragonTC for this device
 DISABLE_DTC_OPTS := true
+TARGET_USE_SDCLANG := true
 
 # Include common PixelDust stuff
 include vendor/pixeldust/configs/pixeldust_phone.mk
