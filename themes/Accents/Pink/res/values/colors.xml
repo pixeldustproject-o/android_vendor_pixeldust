@@ -40,4 +40,9 @@
     <color name="accent_device_default_50">#ffe52c5f</color>
     <color name="settings_icon_tint_color">#ffe52c5f</color>
 
+    <!-- Generic colors -->
+    <color name="generic_theme_primary">#FFFF4081</color>
+    <color name="generic_theme_primary_dark">#FFCC3367</color>
+    <color name="generic_theme_accent">#FFE53974</color>
+
 </resources>
