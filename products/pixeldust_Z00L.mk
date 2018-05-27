@@ -26,6 +26,7 @@ include vendor/pixeldust/configs/pixeldust_phone.mk
 include vendor/pixeldust/configs/system_optional.mk
 
 # OpenGapps
+TARGET_GAPPS_ARCH := arm64
 include vendor/pixeldust/configs/gapps.mk
 
 # Setup device specific product configuration.
