@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
 
 # Custom Packages
 PRODUCT_PACKAGES += \
-    Turbo \
     WallpaperPickerGooglePrebuilt \
     NexusLauncherPrebuilt \
     LatinIMEGooglePrebuilt \

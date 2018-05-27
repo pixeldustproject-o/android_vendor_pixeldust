@@ -16,3 +16,16 @@
 PRODUCT_PACKAGES += \
     PixelDustWallpapers
 
+# Battery optimization tool
+PRODUCT_PACKAGES += \
+    Turbo
+
+# Google Markup from Android P
+PRODUCT_PACKAGES += \
+    GoogleMarkup
+
+# GoogleWebview (prevents new users ending up without webview on 1st install)
+PRODUCT_PACKAGES += \
+    GoogleWebview
+
+

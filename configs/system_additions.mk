@@ -135,10 +135,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.google.android.theme.pixel
 
-# Google Markup from Android P
-PRODUCT_PACKAGES += \
-    GoogleMarkup
-
 # Additional System fonts
 PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/fonts/gobold/Gobold.ttf:system/fonts/Gobold.ttf \
@@ -151,8 +147,4 @@ PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/fonts/snowstorm/snowstorm.ttf:system/fonts/Snowstorm-Regular.ttf \
     vendor/pixeldust/prebuilt/fonts/vcrosd/vcr_osd_mono.ttf:system/fonts/ThemeableFont-Regular.ttf \
     vendor/pixeldust/prebuilt/fonts/googlesans/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Medium.ttf
-
-# GoogleWebview (prevents new users ending up without webview on 1st install)
-PRODUCT_PACKAGES += \
-    GoogleWebview
 
