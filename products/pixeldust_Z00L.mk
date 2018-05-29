@@ -25,6 +25,14 @@ include vendor/pixeldust/configs/pixeldust_phone.mk
 # Include optional stuff (e.g. prebuilt apps)
 include vendor/pixeldust/configs/system_optional.mk
 
+# PixelStyle
+include vendor/pixelstyle/config.mk
+
+# Some Packages
+PRODUCT_PACKAGES += \
+    BluetoothExt \
+    Launcher3
+
 # Setup device specific product configuration.
 PRODUCT_NAME := pixeldust_Z00L
 PRODUCT_DEVICE := Z00L
