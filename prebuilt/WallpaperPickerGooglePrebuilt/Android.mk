@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The Pixel Dust Project
+# Copyright (C) 2016 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include Few More Packages
-PRODUCT_PACKAGES += \
-    BluetoothExt \
-    LatinIME \
-    Launcher3 \
-    SoundPickerPrebuilt \
-    WallpaperPickerGooglePrebuilt
+LOCAL_PATH := $(call my-dir)
 
-# Set Pixel blue light theme on Gboard
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.ime.theme_id=5
+include $(CLEAR_VARS)
+LOCAL_MODULE := WallpaperPickerGooglePrebuilt
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := WallpaperPickerGooglePrebuilt.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := WallpaperPicker \
+                            WallpaperCropper
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)

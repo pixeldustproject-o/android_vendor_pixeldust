@@ -5,9 +5,21 @@
     <!-- This is meant to be the canonical feature identifying 2016 and newer Nexus devices. -->
     <feature name="com.google.android.feature.PIXEL_EXPERIENCE" />
 
+<!-- These are configurations that should exist on Google's 2017 and newer Nexus devices. -->
+<config>
+    <!-- This is meant to be the canonical feature identifying 2017 and newer Nexus devices. -->
+    <feature name="com.google.android.feature.PIXEL_2017_EXPERIENCE" />
+</config>
+
     <!-- Both versions of this string are needed due to a miscommunication. b/29978934 -->
     <feature name="com.google.android.apps.photos.NEXUS_PRELOAD" />
     <feature name="com.google.android.apps.photos.nexus_preload" />
+
+<!-- These are configurations that should exist on Google's 2017 devices (and not newer/older) -->
+<config>
+    <!-- This defines the Photos preload feature for specifically the 2017 Pixel devices. -->
+    <feature name="com.google.android.apps.photos.PIXEL_2017_PRELOAD" />
+</config>
 
     <!-- Enable Zero Touch Provisioning support for 2016 and newer Nexus devices. -->
     <feature name="com.google.android.feature.ZERO_TOUCH" />
