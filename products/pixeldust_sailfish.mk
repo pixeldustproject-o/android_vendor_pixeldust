@@ -43,8 +43,8 @@ PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=sailfish \
-    BUILD_FINGERPRINT=google/sailfish/sailfish:8.1.0/OPM4.171019.016.B1/4720843:user/release-keys \
-    PRIVATE_BUILD_DESC="sailfish-user 8.1.0 OPM4.171019.016.B1 4720843 release-keys"
+    BUILD_FINGERPRINT=google/sailfish/sailfish:8.1.0/OPM4.171019.021.D1/4768809:user/release-keys \
+    PRIVATE_BUILD_DESC="sailfish-user 8.1.0 OPM4.171019.021.D1 4768809 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pixeldust.maintainer="spezi77"
