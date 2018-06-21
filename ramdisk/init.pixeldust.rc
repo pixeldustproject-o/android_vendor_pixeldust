@@ -6,6 +6,9 @@ on boot
     # Run sysinit
     start sysinit
 
+on property:vold.decrypt=trigger_restart_framework 
+    start sysinit
+
 on init
     mkdir /dev/bfqio 0755 root system
     mount cgroup none /dev/bfqio bfqio
