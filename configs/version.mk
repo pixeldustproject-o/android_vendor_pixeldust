@@ -22,5 +22,5 @@ PD_BUILDTYPE := RELEASE
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pixeldust.version=$(BUILD_VERSION)-$(PD_BUILDTYPE)
 
-PIXELDUST_VERSION := oreo-r6
+PIXELDUST_VERSION := oreo-energy-efficient-r6
 
