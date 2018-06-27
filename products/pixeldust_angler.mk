@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit AOSP device configuration for bullhead.
+# Inherit AOSP device configuration for angler.
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
 # Do not use DragonTC for this device
@@ -35,6 +35,6 @@ PRODUCT_MANUFACTURER := Huawei
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:8.0.0/OPR5.170623.011/4397986:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 8.0.0 OPR5.170623.011 4397986 release-keys"
+    BUILD_FINGERPRINT=google/angler/angler:8.1.0/OPM6.171019.030.B1/4768815:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user OPM6.171019.030.B1 4768815 release-keys"
 
