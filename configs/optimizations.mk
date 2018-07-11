@@ -28,6 +28,9 @@ ART_BUILD_HOST_DEBUG := false
 WITH_DEXPREOPT := true
 DEX_PREOPT_DEFAULT := nostripping
 
+# Default compiler
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
+
 # Preopt apks like GMS chimara modules
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
@@ -41,15 +44,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
   Settings \
   NexusLauncherPrebuilt \
   GoogleCamera
- 
-# Dex pre-opt profiles
-ifneq ($(wildcard vendor/dexoptProfiles/),)
-  PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
-  PRODUCT_DEX_PREOPT_PROFILE_DIR := vendor/dexoptProfiles
-  WITH_DEX_PREOPT_GENERATE_PROFILE := true
-else
-  PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed
-endif
 
 # Conditionally use either DragonTC OR SDCLANG Optimizations (in order to disable the use of DragonTC the relevant flags used below need to be inserted into your device make file in vendor/pixeldust/products)
 ifneq ($(DISABLE_DTC_OPTS),true)
