@@ -47,8 +47,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
-    BUILD_FINGERPRINT=google/taimen/taimen:8.1.0/OPM2.171019.029.B1/4720900:user/release-keys \
-    PRIVATE_BUILD_DESC="taimen-user 8.1.0 OPM2.171019.029.B1 4720900 release-keys"
+    BUILD_FINGERPRINT=google/taimen/taimen:8.1.0/OPM2.171026.006.H1/4833802:user/release-keys \
+    PRIVATE_BUILD_DESC="taimen-user 8.1.0 OPM2.171026.006.H1 4833802 release-keys"
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
