@@ -148,3 +148,7 @@ PRODUCT_COPY_FILES += \
     vendor/pixeldust/prebuilt/fonts/vcrosd/vcr_osd_mono.ttf:system/fonts/ThemeableFont-Regular.ttf \
     vendor/pixeldust/prebuilt/fonts/googlesans/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Medium.ttf
 
+# Enhance the ROM with a "native" PDF viewer => EU, please do not fine me :P
+PRODUCT_PACKAGES += \
+    GooglePDFViewer
+
