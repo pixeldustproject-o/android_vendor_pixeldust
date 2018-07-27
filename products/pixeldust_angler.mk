@@ -25,6 +25,10 @@ include vendor/pixeldust/configs/pixeldust_phone.mk
 # Include optional stuff (e.g. prebuilt apps)
 include vendor/pixeldust/configs/system_optional.mk
 
+# Use the minimal set of Pixel prebuilts from:
+# https://gitlab.com/spezi77/vendor_googleapps/tree/minimal-set
+$(call inherit-product, vendor/googleapps/googleapps.mk)
+
 # Setup device specific product configuration.
 PRODUCT_NAME := pixeldust_angler
 PRODUCT_DEVICE := angler
