@@ -1,0 +1,8 @@
+#Common OTA url for all devices
+ota_url=http://wip/ota.xml
+release_type=Stable
+device_name=ro.pixeldust.device
+version_source=ro.pixeldust.ota.version
+version_delimiter=-
+version_position=4
+version_format=yyyyMMdd
