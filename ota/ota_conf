@@ -1,5 +1,5 @@
 #Common OTA url for all devices
-ota_url=https://github.com/pixeldustproject-o/DeviceOTA/blob/master/ota.xml
+ota_url=https://raw.githubusercontent.com/pixeldustproject-o/DeviceOTA/o2/pixeldust_ota.xml
 release_type=Stable
 device_name=ro.pixeldust.device
 version_source=ro.pixeldust.ota.version
