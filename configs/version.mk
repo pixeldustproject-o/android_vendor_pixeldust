@@ -23,6 +23,5 @@ PIXELDUST_VERSION := oreo-r7-we-re-back-n-kickass-r7
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pixeldust.version=$(BUILD_VERSION)-$(PD_BUILDTYPE) \
-    ro.pixeldust.device=$(TARGET_DEVICE) \
-    ro.pixeldust.ota.version=pixeldust_$(TARGET_DEVICE)-$(PIXELDUST_VERSION)
+    ro.pixeldust.ota.version=$(TARGET_PRODUCT)-$(PIXELDUST_VERSION)
 
