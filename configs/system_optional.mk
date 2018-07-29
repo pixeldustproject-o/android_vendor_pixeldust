@@ -16,9 +16,9 @@
 PRODUCT_PACKAGES += \
     PixelDustWallpapers
 
-# Battery optimization tool
+# FMRadio app
 PRODUCT_PACKAGES += \
-    Turbo
+    FMRadio
 
 # Google Markup from Android P
 PRODUCT_PACKAGES += \
