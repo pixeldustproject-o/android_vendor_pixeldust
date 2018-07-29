@@ -19,8 +19,10 @@ PRODUCT_BUILD_PROP_OVERRIDES := BUILD_DISPLAY_ID=$(BUILD_VERSION)
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_BUILD_TYPE=user
 PD_BUILDTYPE := RELEASE
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.pixeldust.version=$(BUILD_VERSION)-$(PD_BUILDTYPE)
+PIXELDUST_VERSION := oreo-r7-we-re-back-n-kickass-r7
 
-PIXELDUST_VERSION := oreo-we-re-back-n-kickass-r7
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.pixeldust.version=$(BUILD_VERSION)-$(PD_BUILDTYPE) \
+    ro.pixeldust.device=$(TARGET_DEVICE) \
+    ro.pixeldust.ota.version=pixeldust_$(TARGET_DEVICE)-$(PIXELDUST_VERSION)
 
