@@ -152,7 +152,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GooglePDFViewer
 
-# Enhance the ROM with a custom LeanLauncher
-PRODUCT_PACKAGES += \
-    LeanLauncher
-
