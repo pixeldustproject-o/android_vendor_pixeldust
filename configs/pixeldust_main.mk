@@ -31,9 +31,7 @@ PRODUCT_PACKAGES += \
 
 # Custom Packages
 PRODUCT_PACKAGES += \
-    WallpaperPickerGooglePrebuilt \
-    NexusLauncherPrebuilt \
-    LatinIMEGooglePrebuilt \
+    Launcher3 \
     Busybox \
     OmniJaws \
     OmniStyle
