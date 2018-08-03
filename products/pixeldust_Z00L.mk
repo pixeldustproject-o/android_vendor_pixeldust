@@ -25,17 +25,11 @@ include vendor/pixeldust/configs/pixeldust_phone.mk
 # Include optional stuff (e.g. prebuilt apps)
 include vendor/pixeldust/configs/system_optional.mk
 
-# OpenGapps
-TARGET_DENSITY := xxhdpi
-TARGET_GAPPS_ARCH := arm64
-include vendor/pixeldust/configs/gapps.mk
-
 # Setup device specific product configuration.
 PRODUCT_NAME := pixeldust_Z00L
-PRODUCT_DEVICE := Zenfone 2 Laser
+PRODUCT_DEVICE := Z00L
 PRODUCT_BRAND := asus
-PRODUCT_MODEL := Z00L
+PRODUCT_MODEL := Zenfone 2 Laser
 PRODUCT_MANUFACTURER := asus
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
-
