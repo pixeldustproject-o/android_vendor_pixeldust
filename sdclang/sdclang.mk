@@ -15,9 +15,9 @@
 SDCLANG ?= false
 SDCLANG_FORCED ?= false
 
-SDCLANG_PATH := vendor/qcom/sdclang-4.0/bin
+SDCLANG_PATH := vendor/pixeldust/sdclang-6.0/bin
 
-SDCLANG_LTO_DEFS := vendor/pixeldust/sdclang/sdllvm-lto-defs.mk
+SDCLANG_LTO_DEFS := vendor/pixeldust/sdllvm-lto-defs.mk
 
 SDCLANG_COMMON_FLAGS := -O3 -fvectorize -mllvm -polly-run-dce
 
