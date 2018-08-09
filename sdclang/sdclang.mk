@@ -20,3 +20,6 @@ SDCLANG_PATH := vendor/qcom/sdclang-6.0/bin
 SDCLANG_LTO_DEFS := vendor/sdclang/config/sdllvm-lto-defs.mk
 
 SDCLANG_COMMON_FLAGS := -O3 -fvectorize -mllvm -polly-run-dce
+
+# Disable debugging no matter which build type
+SDCLANG_COMMON_FLAGS += -g0 -DNDEBUG
